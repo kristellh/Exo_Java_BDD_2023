@@ -37,9 +37,9 @@
 
 <%
 
-    int premierChiffre = Integer.parseInt(tableauDeChiffres[0]);
+    int premierChiffres = Integer.parseInt(tableauDeChiffres[0]);
  int deuxiemeChiffre = Integer.parseInt(tableauDeChiffres[1]);
-    int resultats = premierChiffre + deuxiemeChiffre;  
+    int resultats = premierChiffres + deuxiemeChiffre;  
 
 %>
 </br>
