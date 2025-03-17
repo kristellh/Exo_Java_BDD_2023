@@ -35,17 +35,22 @@
 <h2>Exercice 1 : Combien de 'e' dans notre chaine de charactère ?</h2>
 <p>Ecrire un programme pour compter le nombre de lettre e dans votre chaine de charactères</p>
 <p>
-<% intcount=0 ;%>
-<% for (int i =0 ; i < chaine.length(); i++) { 
+<% int count = 0; %> 
 
+    <% for (int i =0 ; i < chaine.length(); i++) { %>     
+            
+                    
+        <% count++; %> 
+     
             
              <% if (chaine.charAt(i) == 'e') { %>
  count++;
 <% }
+ <% } %> 
        
-        return count;
+         <%  return count; %> 
     </p>
-    <p>Le nombre de e de votre chaîne est de <%= count %></p>
+    <p>"Le nombre de e de votre chaîne est de" <%= count %> </p>
 </br>
 
 <h2>Exercice 2 : Affichage verticale</h2>
