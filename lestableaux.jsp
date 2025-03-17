@@ -51,20 +51,25 @@ Ecrire un programme afin de faire la somme de toutes les valeurs saisie par l'ut
 
 <%
   int somme = 0;
+           for (int chiffre : chiffres) {
+               somme += chiffre;
+           }
 
-       
-        for (int i = 0; i < tableauDeChiffres.length; i++) {
-            try {
-             
-                somme += Integer.parseInt(tableauDeChiffres[i]);
-            } 
-    } 
 %>
   <p>La somme des valeurs est : <%= somme %></p>
 
 <h2>Exercice 4 : La valeur maximum</h2>
 <p>Ecrire un programme pour afficher la valeur maximale saisie par l'utilisateur</p>
+ <% int max = chiffres[0];
+           for (int chiffre : chiffres) {
+              
+if (chiffre > max) {
 
+max = chiffre;
+           }
+}
+        %>
+        <p>La valeur maximale est : <%= max %></p>
 
 <h2>Exercice 5 : La valeur minimale</h2>
 <p>Ecrire un programme pour afficher la valeur minimale saisie par l'utilisateur</p>
