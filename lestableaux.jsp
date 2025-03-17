@@ -87,8 +87,48 @@ valeur=Integer.parseInt(tableauDeChiffres[i]);
 <h2>Exercice 5 : La valeur minimale</h2>
 <p>Ecrire un programme pour afficher la valeur minimale saisie par l'utilisateur</p>
 
+<%
+   int valeurmin =Integer.parseInt(tableauDeChiffres[0]) ;
+
+      
+        for (int i = 0; i < tableauDeChiffres.length; i++) {
+            try {
+if (valeurmin>Integer.parseInt(tableauDeChiffres[i])){
+
+valeurmin=Integer.parseInt(tableauDeChiffres[i]);
+
+}else{
+               valeurmin=valeurmin;}
+            } catch (NumberFormatException e) {
+             
+            }
+        } 
+%>
+<p>La valeur min est : <%= valeurmin %></p>
+
+
 <h2>Exercice 6 : La valeur le plus proche de 0</h2>
 <p>Trouvez la valeur la plus proche de 0 (chiffres positifs ou négatifs)</p>
+
+
+<%
+   int valeurminp =Integer.parseInt(tableauDeChiffres[0]) ;
+
+      
+        for (int i = 0; i < tableauDeChiffres.length; i++) {
+            try {
+if (valeurminp>Integer.parseInt(tableauDeChiffres[i])){
+
+valeurminp=Integer.parseInt(tableauDeChiffres[i]);
+
+}else{
+               valeurminp=valeurminp;}
+            } catch (NumberFormatException e) {
+             
+            }
+        } 
+%>
+<p>La valeur la plus proche de zéro est : <%= valeurminp %></p>
 
 <h2>Exercice 7 : La valeur le plus proche de 0 (2° version)</h2>
 <p>Trouvez la valeur la plus proche de 0 (chiffres positifs ou négatifs)</p>
