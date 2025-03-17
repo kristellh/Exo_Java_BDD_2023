@@ -66,12 +66,14 @@ L'hiver</br>
 sera</br>
 pluvieux</p>
 
-<p>
+  <p>
     <% 
-        for (int i = 0; i < chaine.length(); i++) {
-            if (chaine.charAt(i) == ' ') {
-            out.println(caractere + "<br>");
-        }
+     
+        String[] mots = chaine.split(" ");
+
+      
+        for (String mot : mots) {
+            out.println(mot + "<br>");
         }
     %>
     </p>
@@ -107,7 +109,7 @@ xueivulp ares revih'l</p>
 <% 
     
     int count_voyelle = 0;
-int count_consomme=0
+int count_consomme=0;
     for (int i = 0; i < chaine.length(); i++) {
         if (chaine.charAt(i) == 'a' || chaine.charAt(i) == 'e'|| chaine.charAt(i) == 'i'|| chaine.charAt(i) == 'o' || chaine.charAt(i) == 'u'|| chaine.charAt(i) == 'y') {
             count_voyelle++;
