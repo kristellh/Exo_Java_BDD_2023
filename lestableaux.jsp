@@ -24,11 +24,26 @@
 <h2>Exercice 1 : La carré de la première valeur</h2>
 <p>Ecrire un programme afin d'afficher le carré de la première valeur</p>
 <%
-resultat = tableauDeChiffres[0] * tableauDeChiffres[0]
+
+    int premierChiffre = Integer.parseInt(tableauDeChiffres[0]);
+    int resultat = premierChiffre * premierChiffre;  
+
 %>
-<p> le carré de la première valeur est<%= resultat %></p>
+</br>
+<p>Le carré de la première valeur est : <%= resultat %></p>
+</br>
 <h2>Exercice 2 : La somme des 2 premières valeurs</h2>
 <p>Ecrire un programme afin d'afficher la somme des deux premières valeurs</p>
+
+<%
+
+    int premierChiffre = Integer.parseInt(tableauDeChiffres[0]);
+ int deuxiemeChiffre = Integer.parseInt(tableauDeChiffres[1]);
+    int resultats = premierChiffre + deuxiemeChiffre;  
+
+%>
+</br>
+<p>La somme des deux première valeur est : <%= resultats %></p>
 
 <h2>Exercice 3 : La somme de toutes les valeurs</h2>
 <p>L'utilisateur peut à présent saisir autant de valeurs qu'il le souhaite dans champs de saisie.</br>
