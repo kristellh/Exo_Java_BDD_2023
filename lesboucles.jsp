@@ -105,11 +105,11 @@
 <p>&nbsp;&nbsp;&nbsp;&nbsp;*</br>&nbsp;&nbsp;&nbsp;**</br>&nbsp;&nbsp;***</br>&nbsp;****</br>*****</p>
 
  <p>
-   
+   <% int n = cpt-1; %> 
     <% for (int j = 1; j <= cpt; j++) { %>     
         <% 
          
-            for (int i = 1; i <= cpt; i++) { 
+            for (int i = 1; i <= n; i++) { 
         %>        
             <%= "&nbsp;" %> 
         <% 
@@ -121,6 +121,7 @@
         <% 
             }
         %> 
+ <% n = n - 1; %> 
         <%= "<br>" %> 
     <% } %> 
 </p>
