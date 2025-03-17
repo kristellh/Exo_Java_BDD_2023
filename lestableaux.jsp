@@ -49,13 +49,15 @@
 <p>L'utilisateur peut à présent saisir autant de valeurs qu'il le souhaite dans champs de saisie.</br>
 Ecrire un programme afin de faire la somme de toutes les valeurs saisie par l'utilisateur</p>
 <%
-int somme = 0
-for (i=1; i<=tableauDeChiffres.length;i++){
-somme+=Integer.parseInt(tableauDeChiffres[i])
-}
+for (int i = 0; i < tableauDeChiffres.length; i++) {
+            try {
+              
+                somme += Integer.parseInt(tableauDeChiffres[i]);
+            }
 %>
 </br>
 <p>La somme des valeur est : <%= somme %></p>
+
 <h2>Exercice 4 : La valeur maximum</h2>
 <p>Ecrire un programme pour afficher la valeur maximale saisie par l'utilisateur</p>
 
