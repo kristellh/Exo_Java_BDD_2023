@@ -54,12 +54,14 @@ for (int i = 0; i < tableauDeChiffres.length; i++) {
               
                 somme += Integer.parseInt(tableauDeChiffres[i]);
             }
+}
 %>
 </br>
 <p>La somme des valeur est : <%= somme %></p>
 
 <h2>Exercice 4 : La valeur maximum</h2>
 <p>Ecrire un programme pour afficher la valeur maximale saisie par l'utilisateur</p>
+
 
 <h2>Exercice 5 : La valeur minimale</h2>
 <p>Ecrire un programme pour afficher la valeur minimale saisie par l'utilisateur</p>
