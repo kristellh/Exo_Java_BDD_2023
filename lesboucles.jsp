@@ -43,10 +43,34 @@
 <p>Exemple si l'utilisateur saisie le valeur 5</p>
 <p>*</br>**</br>***</br>****</br>*****</p>
 
+<p>
+<% n=4 %>
+    <% for (int j = 1; j <= cpt; j++) { %>     
+        <% for (int i = 1; i <= cpt-n; i++) { %>        
+            <%= "*" %>            
+        <% } %> 
+<% n+=n-1 %>
+        <%= "<br>" %> 
+    <% } %> 
+</p>
+
+</br>
+
 <h2>Exercice 3 : Triangle rectangle inversé</h2>
 <p>Ecrire le code afin de produire un triangle rectangle aligné sur la gauche</p>
 <p>Exemple si l'utilisateur saisie le valeur 5</p>
 <p>*****</br>****</br>***</br>**</br>*</p>
+
+<p>
+    <% for (int j = 1; j <= cpt; j++) { %>     
+        <% for (int i = 1; i <= cpt-j; i++) { %>        
+            <%= "*" %>            
+        <% } %>  
+        <%= "<br>" %> 
+    <% } %> 
+</p>
+
+</br>
 
 <h2>Exercice 4 : Triangle rectangle 2</h2>
 <p>Ecrire le code afin de produire un triangle rectangle aligné sur la droite</p>
