@@ -6,7 +6,7 @@
 <body bgcolor=white>
 <h1>Exercices sur les tableaux</h1>
 <form action="#" method="post">
-    <p>Saisir au minimu 3 chiffres à la suite, exemple : 6 78 15 <input type="text" id="inputValeur" name="chaine">
+    <p>Saisir au minimum 3 chiffres à la suite, exemple : 6 78 15 <input type="text" id="inputValeur" name="chaine">
     <p><input type="submit" value="Afficher">
 </form>
 <%-- Récupération des valeurs --%>
@@ -23,7 +23,10 @@
     
 <h2>Exercice 1 : La carré de la première valeur</h2>
 <p>Ecrire un programme afin d'afficher le carré de la première valeur</p>
-
+<%
+resultat = tableauDeChiffres[0] * tableauDeChiffres[0]
+%>
+<p> le carré de la première valeur est<%= resultat %></p>
 <h2>Exercice 2 : La somme des 2 premières valeurs</h2>
 <p>Ecrire un programme afin d'afficher la somme des deux premières valeurs</p>
 
