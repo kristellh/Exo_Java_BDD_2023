@@ -43,7 +43,7 @@
 
 %>
 </br>
-<p>La somme des deux première valeur est : <%= resultats %></p>
+<p>La somme des deux premières valeurs est : <%= resultats %></p>
 
 <h2>Exercice 3 : La somme de toutes les valeurs</h2>
 <p>L'utilisateur peut à présent saisir autant de valeurs qu'il le souhaite dans champs de saisie.</br>
@@ -60,10 +60,29 @@ Ecrire un programme afin de faire la somme de toutes les valeurs saisie par l'ut
             }
         } 
 %>
-<p>La somme des deux première valeur est : <%= somme %></p>
+<p>La somme des valeurs est : <%= somme %></p>
+
 <h2>Exercice 4 : La valeur maximum</h2>
 <p>Ecrire un programme pour afficher la valeur maximale saisie par l'utilisateur</p>
 
+<%
+   int valeur =Integer.parseInt(tableauDeChiffres[0]) ;
+
+      
+        for (int i = 0; i < tableauDeChiffres.length; i++) {
+            try {
+if (valeur<Integer.parseInt(tableauDeChiffres[i])){
+
+valeur=Integer.parseInt(tableauDeChiffres[i]);
+
+}else{
+               valeur=valeur;}
+            } catch (NumberFormatException e) {
+             
+            }
+        } 
+%>
+<p>La valeur max est : <%= valeur %></p>
 
 <h2>Exercice 5 : La valeur minimale</h2>
 <p>Ecrire un programme pour afficher la valeur minimale saisie par l'utilisateur</p>
