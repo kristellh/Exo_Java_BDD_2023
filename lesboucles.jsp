@@ -82,7 +82,7 @@
     <% for (int j = 1; j <= cpt; j++) { %>     
         <% 
          
-            for (int i = 1; i <= cpt - j; i++) { 
+            for (int i = 1; i <= cpt; i++) { 
         %>        
             <%= "&nbsp;" %> 
         <% 
@@ -109,7 +109,7 @@
     <% for (int j = 1; j <= cpt; j++) { %>     
         <% 
          
-            for (int i = 1; i <= cpt - j; i++) { 
+            for (int i = 1; i <= cpt; i++) { 
         %>        
             <%= "&nbsp;" %> 
         <% 
@@ -141,6 +141,10 @@
 <p>5 x 3 = 15</p>
 <p>5 x 4 = 20</p>
 <p>5 x 5 = 25</p>
+
+
+
+
 
 <% } %>
 <p><a href="index.html">Retour au sommaire</a></p>
