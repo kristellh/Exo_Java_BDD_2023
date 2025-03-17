@@ -79,21 +79,13 @@
 
  <p>
    
-    <% for (int j = 1; j <= cpt; j++) { %>     
-        <% 
-         
-            for (int i = 1; i <= cpt+1; i++) { 
-        %>        
+    <% for (int i = 1; i <= cpt; i++) { %>     
+        <% for (int j = 1; j <= cpt - i; j++) { %>        
             <%= "&nbsp;" %> 
-        <% 
-            }
-         
-            for (int i = 1; i <= j; i++) { 
-        %>        
-            <%= "*" %>
-        <% 
-            }
-        %> 
+        <% } %> 
+        <% for (int j = 1; j <= i; j++) { %>        
+            <%= "*" %> 
+        <% } %> 
         <%= "<br>" %> 
     <% } %> 
 </p>
@@ -134,10 +126,36 @@
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**</br>&nbsp;&nbsp;&nbsp;&nbsp;***</br>&nbsp;&nbsp;****</br>*****</p>
 <p>*****</br>&nbsp;&nbsp;****</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*</p>
 
+<p>
+    
+    
+
+    <% for (int i = 1; i <= cpt; i++) { %>     
+        <% for (int j = 1; j <= cpt - i; j++) { %>        
+            <%= "&nbsp;" %> 
+        <% } %> 
+        <% for (int j = 1; j <= i; j++) { %>        
+            <%= "*" %> 
+        <% } %> 
+        <%= "<br>" %> 
+    <% } %> 
+    
+    
+    <% for (int i = 1; i <= cpt - 1; i++) { %>     
+        <% for (int j = 1; j <= i; j++) { %>        
+            <%= "&nbsp;" %> 
+        <% } %> 
+        <% for (int j = 1; j <= cpt - i; j++) { %>        
+            <%= "*" %> 
+        <% } %> 
+        <%= "<br>" %> 
+    <% } %> 
+</p>
+
+
+
 <h2>Exercice 7 : La table de multiplication</h2>
 <p>Ecrire le code afin de créser une table de multiplication</p>
-
-
 <p>
 <% for (int i = 1; i <= cpt; i++) { %> 
         <p><%= cpt + " x " + i + " = " + (cpt * i) %></p>
