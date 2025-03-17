@@ -134,6 +134,7 @@ valeurmin=Integer.parseInt(tableauDeChiffres[i]);
 <p>Trouvez la valeur la plus proche de 0 (chiffres positifs ou négatifs)</p>
 <p>En cas d'égalité entre un chiffre positif et négatif, affichez le chiffre positif</p>
 <%
+   int valeurProcheDeZero = Integer.MAX_VALUE;
 for (String str : tableauDeChiffres) {
             try {
                 int currentValue = Integer.parseInt(str);
