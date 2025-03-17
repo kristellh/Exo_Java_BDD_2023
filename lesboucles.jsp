@@ -97,7 +97,7 @@
 <p>&nbsp;&nbsp;&nbsp;&nbsp;*</br>&nbsp;&nbsp;&nbsp;**</br>&nbsp;&nbsp;***</br>&nbsp;****</br>*****</p>
 
  <p>
-   <% int k = cpt-1; %> 
+  
     <% for (int j = 1; j <= cpt; j++) { %>     
         <% 
          
@@ -109,11 +109,11 @@
          
             for (int i = 1; i <= j; i++) { 
         %>        
-            <%= "*" %>
+            <%= " *" %>
         <% 
             }
         %> 
- <% k = k - 1; %> 
+
         <%= "<br>" %> 
     <% } %> 
 </p>
@@ -139,13 +139,14 @@
         <% } %> 
         <%= "<br>" %> 
     <% } %> 
+    <%= "<br>" %> 
+<%= "<br>" %> 
     
-    
-    <% for (int i = 1; i <= cpt - 1; i++) { %>     
-        <% for (int j = 1; j <= i; j++) { %>        
+    <% for (int j = 1; j <= cpt - 1; j++) { %>     
+        <% for (int i = 1; i <= j; i++) { %>        
             <%= "&nbsp;" %> 
         <% } %> 
-        <% for (int j = 1; j <= cpt - i; j++) { %>        
+        <% for (int i = 1; i <= cpt; i++) { %>        
             <%= "*" %> 
         <% } %> 
         <%= "<br>" %> 
