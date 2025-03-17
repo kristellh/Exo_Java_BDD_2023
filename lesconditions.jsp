@@ -36,12 +36,9 @@
 <h2>Exercice 1 : Comparaison 1</h2>
 <p>Ecrire un programme qui demande à l'utilisateur de saisir 3 valeurs (des chiffres),</br>
 A, B et C et dites nous si la valeur de C est comprise entre A et B.</br>
-Exemple :</br>
-A = 10</br>
-B = 20</br>
-C = 15</br>
-Oui C est compris entre A et B</p>
-
+</br>
+<p> La comparaison est effectuée sur les valeurs entrées ci-dessus. </p>
+</br>
   <% if (intValeur1 > intValeur3 && intValeur3 > intValeur2 ) { %>
  <p>Valeur 3 est comprise entre la valeur 1 et la valeur 2.</p>
 <% } 
@@ -51,14 +48,17 @@ else if (intValeur2 > intValeur3 && intValeur3 > intValeur1 ) { %>
 else { %>
              <p>Valeur 3 n'est pas comprise entre la valeur 1 et la valeur 2.</p>
         <% } %>
-
+</br>
 <h2>Exercice 2 : Pair ou Impair ?</h2>
 <p>Écrivez un programme pour vérifier si un nombre est pair ou impair en utilisant une structure if</p>
+</br>
+<p> On utilise la valeur entrée en 1. </p>
+</br>
 <% if (intValeur1 % 2 ==0) { %>
 <p>Valeur 1 est pair</p>
 <% }
 else { %>
-             <p>Valeur 1 n'est pas pair.</p>
+             <p>La valeur 1 n'est pas pair.</p>
         <% } %>
 <% } %>
 <p><a href="index.html">Retour au sommaire</a></p>
