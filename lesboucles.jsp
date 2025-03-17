@@ -44,7 +44,7 @@
 <p>*</br>**</br>***</br>****</br>*****</p>
 
 <p>
-    <% int n = 4; %> 
+    <% int n = cpt-1; %> 
     <% for (int j = 1; j <= cpt; j++) { %>     
         <% for (int i = 1; i <= cpt - n; i++) { %>        
             <%= "*" %>            
@@ -79,7 +79,7 @@
 
  <p>
    
-    <% for (int j = 1; j <= n; j++) { %>     
+    <% for (int j = 1; j <= cpt; j++) { %>     
         <% 
          
             for (int i = 1; i <= cpt - j; i++) { 
@@ -87,7 +87,7 @@
             <%= "&nbsp;" %> 
         <% 
             }
-            // Afficher les astérisques
+         
             for (int i = 1; i <= j; i++) { 
         %>        
             <%= "*" %>
@@ -104,17 +104,20 @@
 <p>Exemple si l'utilisateur saisie le valeur 5</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;*</br>&nbsp;&nbsp;&nbsp;**</br>&nbsp;&nbsp;***</br>&nbsp;****</br>*****</p>
 
- <% for (int j = 1; j <= cpt; j++) { %>     
+ <p>
+   
+    <% for (int j = 1; j <= cpt; j++) { %>     
         <% 
-            for (int i = 1; i <= j; i++) { 
+         
+            for (int i = 1; i <= cpt - j; i++) { 
         %>        
             <%= "&nbsp;" %> 
         <% 
             }
-        
+         
             for (int i = 1; i <= j; i++) { 
         %>        
-            <%= "*" %>            
+            <%= "*" %>
         <% 
             }
         %> 
