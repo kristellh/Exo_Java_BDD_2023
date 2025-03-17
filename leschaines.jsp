@@ -38,11 +38,12 @@
 <% intcount=0 ;%>
 <% for (int i =0 ; i < chaine.length(); i++) { 
 
-           <% if (chaine.charAt(i) == 'e') {  %>
-                count++;  
-            }%>
-    <%    }%>
-        return count;  %>
+            
+             <% if (chaine.charAt(i) == 'e') { %>
+ count++;
+<% }
+       
+        return count;
     </p>
     <p>Le nombre de e de votre chaîne est de <%= count %></p>
 </br>
