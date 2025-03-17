@@ -36,13 +36,13 @@
 <p>Ecrire un programme pour compter le nombre de lettre e dans votre chaine de charactères</p>
 count=0
  for (int i = 0; i < chaine.length(); i++) {
-            if (chaine.charAt(i) == 'e') {  // Vérifier si le caractère est 'e'
-                count++;  // Incrémenter le compteur
+            if (chaine.charAt(i) == 'e') {  
+                count++;  
             }
         }
-        return count;  // Retourner le nombre de 'e'
+        return count;  
     }
-    <p>La longueur de votre chaîne est de <%= longueur_e %> caractères</p>
+    <p>Le nombre de e de votre chaîne est de <%= count %></p>
 </br>
 
 <h2>Exercice 2 : Affichage verticale</h2>
