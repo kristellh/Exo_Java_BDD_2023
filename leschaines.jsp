@@ -38,13 +38,10 @@
 <% int count = 0; %> 
 
     <% for (int i =0 ; i < chaine.length(); i++) { %>     
-            
-                    
-        <% count++; %> 
      
             
              <% if (chaine.charAt(i) == 'e') { %>
- count++;
+<% count++; %> 
 <% }
  <% } %> 
        
